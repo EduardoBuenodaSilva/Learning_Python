@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    choice = 'files'
+    choice = 'sets'
 
     if choice == 'number':
         import Dnumber
@@ -15,7 +15,7 @@ if __name__ == "__main__":
         obj = Dstrings.string()
         obj.indexing()
         obj.repconc(3)
-        obj.immutability(' Lets change a string ')
+        obj.immutability(' 0Lets change a string ')
         
     elif choice == 'lists':
         import Dlist
@@ -51,4 +51,11 @@ if __name__ == "__main__":
         obj = Dfiles.files()
         obj.output()
         obj.inputs()
+        obj.unicodeTfiles()
+
+    elif choice == 'sets':
+        import Dsets
+        obj = Dsets.sets()
+        obj.opertations()
+        obj.membership()
 

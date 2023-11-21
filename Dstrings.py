@@ -28,3 +28,4 @@ class string:
             print("Strings are immutable objects they cannot be changed in place")
             self.s0 = self.s0[:1] + thing + self.s0[2:]
             print(self.s0)
+

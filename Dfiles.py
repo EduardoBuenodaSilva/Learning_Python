@@ -43,3 +43,15 @@ class files:
     def inputs(self):
         for line in open('output.txt'): print(line)
 
+    def unicodeTfiles(self):
+        s = 'sp\xc4m'
+        file = open('unidata.txt', 'w', encoding='utf-8')
+        print(file.write(s))
+        file.close()
+
+        text = open('unidata.txt', encoding='utf-8').read()
+        print(text)
+        print(len(text))
+
+        raw = open('unidata.txt', 'rb').read()
+        print(raw)

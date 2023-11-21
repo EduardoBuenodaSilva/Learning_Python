@@ -11,5 +11,5 @@ class tuple:
         try:
             self.t1[0] = 2
         except:
-            print("tuples are immutable objects, so we cannot change once defined in-place")
-            print("Tuples don't grow and shirink")
+            print("Tuples are immutable objects, so we cannot change it inplace,")
+            print("once defined Tuples don't grow and shirink")
